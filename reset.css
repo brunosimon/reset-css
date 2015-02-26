@@ -52,16 +52,50 @@ table {
 	-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;
 }
 
-/* iOS form style */
-input,textarea,select {
-    -webkit-appearance: none;
+/* inputs */
+input,button,textarea,select {
+	color:inherit;
+	font-size:inherit;
+	font-style:inherit;
+	font-family:inherit;
     -webkit-border-radius:0;
     border-radius:0;
+    -webkit-padding-start:0;
+    align-items:flex-start;
+    text-index:0;
     border:none;
     outline:none;
+    background:none;
+    padding:0;
+    margin:0;
+    width:auto;
+    height:auto;
+    line-height:1em;
 }
 
-/* iOS (mostly) text size adjusting */
+/* inputs appearance (not for every input)  */
+input[type=text],input[type=reset],input[type=password],input[type=search],input[type=email],input[type=tel],input[type=url],input[type=time],input[type=week],input[type=month],input[type=date],input[type=datetime],input[type=datetime-local],input[type=number],
+input[type=submit],input[type=reset],input[type=color],input[type=file],
+button,textarea,select {
+    -webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	height:1em;
+}
+
+/* input color width */
+input[type=color] {
+	width:1em;
+}
+
+/* details and summary */
+details, summary {
+    -webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+
+/* text size adjusting */
 body {
 	-webkit-text-size-adjust:100%;
        -moz-text-size-adjust:100%;
@@ -73,7 +107,33 @@ input::-ms-clear {
     display:none;
 }
 
-/* Firefox links dotted selection */
+/* mark */
+mark {background:none;}
+
+/* Font smoothing */
+*,*::before,*::after,*:before,*:after {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* hr */
+hr {
+	height:1px;
+	margin:0;padding:0;
+}
+
+/* u */
+u {
+	text-decoration:none;
+}
+
+/* th */
+table th {
+	text-align:left;
+}
+
+/* a */
 a {
-   outline: 0;
+	color:inherit;
+	outline:none;
 }

@@ -6,12 +6,10 @@ Improved version of [Eric Meyer](http://meyerweb.com/eric/tools/css/reset/)'s re
 
 * Reset Meyer
 * Box sizing
-* iOS inputs appearance
-* iOS inputs rounding
+* inputs appearance
 * Mobile text size adjusting
-* IE clear cross
-* Firefox links dotted outline
 * Font smoothing (webkit antialised, moz osx grayscale)
+* ...
 
 ## Issues
 

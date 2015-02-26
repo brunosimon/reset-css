@@ -88,6 +88,11 @@ input[type=color] {
     width:1em;
 }
 
+/* IE clear cross */
+input::-ms-clear {
+    display:none;
+}
+
 /* details and summary */
 details, summary {
     -webkit-appearance:none;
@@ -100,11 +105,6 @@ body {
     -webkit-text-size-adjust:100%;
        -moz-text-size-adjust:100%;
             text-size-adjust:100%;
-}
-
-/* IE clear cross */
-input::-ms-clear {
-    display:none;
 }
 
 /* mark */

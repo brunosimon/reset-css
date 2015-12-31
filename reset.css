@@ -111,10 +111,10 @@ body {
 mark {background:none;}
 
 /* Font smoothing */
-*,*::before,*::after,*:before,*:after {
+/**,*::before,*::after,*:before,*:after {
      -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
+}*/
 
 /* hr */
 hr {
